@@ -10,6 +10,19 @@ module.exports = merge(common, {
       template: "./index.html",
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        use: "ts-loader",
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
   devtool: "inline-source-map",
   devServer: {
     contentBase: "./dist",
