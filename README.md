@@ -1,14 +1,14 @@
-## React Typescript template using Webpack client
+# React Typescript template using Webpack client
 
-# Common config
+## Common config
 - Hot Reloading
 - Typescript processing
 - css-loader / style-loader
 - ts-loader
 
-# Dev config
+## Dev config
 - inline-source-map logger
 
-# Prod config
+## Prod config
 - css minimizer
 - source-map logger
