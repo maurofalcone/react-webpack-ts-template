@@ -1,7 +1,7 @@
 {
   "include": [
     "./src/**/*",
-    "global.d.ts",
+    "global.d.ts", "setupTest.js", "setupTest.js",
   ],
   "exclude": [
     "node_modules/**",
