@@ -1,12 +1,41 @@
 {
-    "compilerOptions": {
-      "outDir": "./dist/",
-      "noImplicitAny": true,
-      "module": "es6",
-      "target": "es5",
-      "jsx": "react",
-      "allowJs": true,
-      "moduleResolution": "node",
-      "allowSyntheticDefaultImports": true,
-    }
+  "include": [
+    "./src/**/*",
+    "global.d.ts",
+  ],
+  "exclude": [
+    "node_modules/**",
+    "**/*.css",
+  ],
+  "compilerOptions": {
+    /* Basic Options */
+    "outDir": "./dist/",
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "plugins": [ /* Allow .css files to be imported as a module in ts and tsx files. */
+      {
+        "name": "css-module-types"
+      }
+    ],
+    "baseUrl": ".", /* Base directory to resolve non-absolute module names. */
+    /* Module Resolution Options */
+    "paths": {
+      "Components/*": [
+        "./src/components/*"
+      ],
+    },
+    "esModuleInterop": true,  /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+    /* Strict Type-Checking Options */
+    "noImplicitAny": true,
+    "strict": true, /* Enable all strict type-checking options. */
+    /* Additional Checks */
+    // "noUnusedLocals": true,                /* Report errors on unused locals. */
+    // "noUnusedParameters": true,            /* Report errors on unused parameters. */
+    // "noImplicitReturns": true,             /* Report error when not all code paths in function return a value. */
+    // "noFallthroughCasesInSwitch": true,    /* Report errors for fallthrough cases in switch statement. */
+  },
 }
