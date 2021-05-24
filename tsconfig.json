@@ -1,7 +1,8 @@
 {
   "include": [
     "./src/**/*",
-    "global.d.ts", "setupTest.js", "setupTest.js",
+    "global.d.ts",
+    "setupTest.js",
   ],
   "exclude": [
     "node_modules/**",
@@ -27,8 +28,11 @@
       "Components/*": [
         "./src/components/*"
       ],
+      "Redux/*": [
+        "./src/redux/*"
+      ],
     },
-    "esModuleInterop": true,  /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+    "esModuleInterop": true, /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
     /* Strict Type-Checking Options */
     "noImplicitAny": true,
     "strict": true, /* Enable all strict type-checking options. */

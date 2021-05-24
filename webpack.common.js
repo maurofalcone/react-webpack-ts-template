@@ -8,6 +8,7 @@ module.exports = {
     extensions: [".tsx", ".ts", ".js"],
     alias: {
       Components: path.resolve("./src/components"),
+      Redux: path.resolve("./src/redux"),
     },
   },
   output: {
